@@ -1,0 +1,127 @@
+/* Hide the step number */
+.p-stepper-number {
+    display: none;
+}
+
+/* Optionally align the title better after hiding the number */
+.p-stepper-title {
+    margin-left: 0;
+}
+
+/* Container for the stepper to position elements correctly */
+.stepper-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Centering the separator line */
+.p-stepper-separator {
+    position: absolute;
+    left: 8px; /* Adjust this value for the correct alignment */
+    transform: translateX(-50%);
+    height: 400px;
+    border-left: 1px solid #bebcbc;
+    z-index: 0;
+}
+
+/* Ensure headers and panels are positioned correctly */
+.p-stepper-header,
+.p-stepper-panel {
+    position: relative;
+}
+
+/* Base styles for the stepper icon container */
+.inline-flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-circle {
+    border-radius: 50%;
+}
+
+.border-primary {
+    border-color: #007bff;
+}
+
+/* Styles for the approved step */
+.bg-green {
+    background-color: #28a745;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* Styles for the denied step */
+.bg-red {
+    background-color: #dc3545;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.h-3rem {
+    height: 3rem;
+}
+
+.w-3rem {
+    width: 3rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-gray-600 {
+    color: #4a4a4a;
+}
+
+/* Aligning step content with title */
+.step-header {
+    align-items: flex-start;
+    /*margin-left: 20px; /* Ensures consistent alignment with the title */
+}
+
+.step-info {
+    margin-left: 1rem; /* Ensures the title content aligns correctly with the icon */
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem; /* Adjust to align content properly */
+}
+
+.step-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+}
